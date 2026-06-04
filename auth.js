@@ -1,11 +1,6 @@
-const AUTH_PASSWORD = "🍓strawberry2026";
-const AUTH_KEY = "shinyama-preview-authenticated";
+const AUTH_PASSWORD = "strawberry2026";
 
-if (sessionStorage.getItem(AUTH_KEY) === "true") {
-  unlockPage();
-} else {
-  window.addEventListener("DOMContentLoaded", showAuthGate);
-}
+window.addEventListener("DOMContentLoaded", showAuthGate);
 
 function showAuthGate() {
   const gate = document.createElement("div");
@@ -36,7 +31,6 @@ function showAuthGate() {
     event.preventDefault();
 
     if (input.value === AUTH_PASSWORD) {
-      sessionStorage.setItem(AUTH_KEY, "true");
       gate.remove();
       unlockPage();
       return;
