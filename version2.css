@@ -355,8 +355,10 @@ h1 {
   backdrop-filter: blur(8px);
 }
 
-.instagram-link {
-  width: min(100%, 420px);
+.instagram-links {
+  display: grid;
+  gap: 10px;
+  width: min(100%, 760px);
   margin: 20px auto 0;
 }
 
@@ -462,6 +464,10 @@ footer small {
 
   .menu-notes {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .instagram-links {
+    grid-template-columns: 1fr 1fr;
   }
 
 }
