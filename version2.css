@@ -204,114 +204,21 @@ h1 {
 
 .product-visual {
   position: relative;
-  display: grid;
-  justify-items: center;
-  align-content: center;
   min-height: 430px;
   border: 1px solid rgba(156, 106, 53, 0.2);
   border-radius: 8px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.78), rgba(255, 248, 234, 0.56)),
-    repeating-linear-gradient(45deg, rgba(216, 164, 91, 0.1) 0 12px, transparent 12px 24px);
+  background: var(--paper);
   box-shadow: var(--shadow);
   overflow: hidden;
 }
 
-.softcream {
-  position: relative;
-  width: 250px;
-  height: 245px;
-}
-
-.cream {
-  position: absolute;
-  left: 50%;
+.product-visual img {
   display: block;
-  border-radius: 50% 50% 44% 44%;
-  background: linear-gradient(145deg, #fff 10%, #f7efe3 70%);
-  box-shadow: inset -18px -18px 30px rgba(216, 164, 91, 0.14);
-  transform: translateX(-50%);
-}
-
-.cream-1 {
-  top: 24px;
-  width: 128px;
-  height: 88px;
-}
-
-.cream-2 {
-  top: 78px;
-  width: 190px;
-  height: 104px;
-}
-
-.cream-3 {
-  top: 142px;
-  width: 242px;
-  height: 116px;
-}
-
-.berry {
-  position: absolute;
-  display: block;
-  box-shadow: 0 8px 18px rgba(52, 36, 95, 0.16);
-}
-
-.strawberry {
-  width: 38px;
-  height: 46px;
-  border-radius: 60% 60% 70% 70%;
-  background: radial-gradient(circle at 35% 28%, #ff8f91, var(--strawberry) 58%, var(--strawberry-deep));
-}
-
-.strawberry.one {
-  top: 95px;
-  left: 42px;
-  rotate: -18deg;
-}
-
-.strawberry.two {
-  top: 142px;
-  right: 34px;
-  rotate: 20deg;
-}
-
-.blueberry {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 32% 28%, #7b68b4, var(--blueberry) 62%, #160f2e);
-}
-
-.blueberry.one {
-  top: 64px;
-  right: 52px;
-}
-
-.blueberry.two {
-  top: 166px;
-  left: 58px;
-}
-
-.cone {
-  width: 186px;
-  height: 245px;
-  clip-path: polygon(8% 0, 92% 0, 50% 100%);
-  background:
-    repeating-linear-gradient(45deg, transparent 0 18px, rgba(111, 70, 28, 0.22) 18px 21px),
-    repeating-linear-gradient(-45deg, transparent 0 18px, rgba(111, 70, 28, 0.18) 18px 21px),
-    linear-gradient(145deg, #f0bf74, var(--waffle));
-  filter: drop-shadow(0 22px 28px rgba(90, 56, 25, 0.18));
-  margin-top: -24px;
-}
-
-.product-visual > p {
-  margin: 18px 0 0;
-  color: var(--waffle-deep);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  object-fit: cover;
+  object-position: center 42%;
 }
 
 .section {
@@ -391,64 +298,15 @@ h1 {
   line-height: 2;
 }
 
-.mini-cone {
-  position: relative;
-  width: 150px;
-  height: 230px;
-  justify-self: center;
-}
-
-.mini-cream {
-  position: absolute;
-  top: 8px;
-  left: 50%;
-  width: 142px;
-  height: 108px;
-  border-radius: 50% 50% 44% 44%;
-  background: linear-gradient(145deg, #fff 16%, #f5ecdd 76%);
-  box-shadow: inset -14px -16px 24px rgba(216, 164, 91, 0.16);
-  transform: translateX(-50%);
-}
-
-.mini-cone::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 116px;
-  height: 150px;
-  clip-path: polygon(6% 0, 94% 0, 50% 100%);
-  background:
-    repeating-linear-gradient(45deg, transparent 0 14px, rgba(111, 70, 28, 0.24) 14px 17px),
-    repeating-linear-gradient(-45deg, transparent 0 14px, rgba(111, 70, 28, 0.18) 14px 17px),
-    linear-gradient(145deg, #efbf74, var(--waffle));
-  transform: translateX(-50%);
-}
-
-.mini-berry {
-  position: absolute;
-  z-index: 2;
+.signature-image {
   display: block;
-  border-radius: 50%;
-  box-shadow: 0 8px 18px rgba(52, 36, 95, 0.16);
-}
-
-.mini-berry.red {
-  top: 62px;
-  left: 38px;
-  width: 38px;
-  height: 44px;
-  border-radius: 58% 58% 68% 68%;
-  background: radial-gradient(circle at 34% 28%, #ff9b9b, var(--strawberry) 58%, var(--strawberry-deep));
-  rotate: -14deg;
-}
-
-.mini-berry.purple {
-  top: 52px;
-  right: 34px;
-  width: 36px;
-  height: 36px;
-  background: radial-gradient(circle at 32% 28%, #7b68b4, var(--blueberry) 62%, #160f2e);
+  width: min(100%, 190px);
+  aspect-ratio: 3 / 4;
+  justify-self: center;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 16px 34px rgba(52, 36, 95, 0.16);
 }
 
 .menu-notes {
@@ -649,11 +507,7 @@ footer small {
     min-height: 380px;
   }
 
-  .softcream {
-    scale: 0.88;
-  }
-
-  .cone {
-    scale: 0.9;
+  .product-visual img {
+    min-height: 380px;
   }
 }
