@@ -545,6 +545,17 @@ footer small {
 
 }
 
+@media (max-width: 779px) {
+  .product-visual {
+    order: -1;
+    min-height: clamp(320px, 72vw, 430px);
+  }
+
+  .product-visual img {
+    min-height: clamp(320px, 72vw, 430px);
+  }
+}
+
 @media (max-width: 420px) {
   .site-header {
     align-items: start;
@@ -609,11 +620,4 @@ footer small {
     font-size: 9px;
   }
 
-  .product-visual {
-    min-height: 380px;
-  }
-
-  .product-visual img {
-    min-height: 380px;
-  }
 }
