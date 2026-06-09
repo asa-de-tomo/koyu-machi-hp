@@ -167,8 +167,7 @@ h1 {
 
 .hero-text p:not(.eyebrow),
 .section-title p,
-.story-grid p,
-.embed-body p {
+.story-grid p {
   color: var(--muted);
   font-size: 15px;
   line-height: 2;
@@ -364,16 +363,6 @@ h1 {
   margin-bottom: 0;
 }
 
-.instagram-embed {
-  display: grid;
-  gap: 18px;
-  border: 1px solid rgba(52, 36, 95, 0.16);
-  border-radius: 8px;
-  padding: 20px;
-  background: var(--paper);
-  box-shadow: var(--shadow);
-}
-
 .signature-menu {
   display: grid;
   gap: 22px;
@@ -462,65 +451,6 @@ h1 {
   background: radial-gradient(circle at 32% 28%, #7b68b4, var(--blueberry) 62%, #160f2e);
 }
 
-.instagram-actions {
-  display: grid;
-  gap: 10px;
-}
-
-.embed-head {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 14px;
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 16px;
-}
-
-.embed-head p {
-  margin-bottom: 0;
-  color: var(--strawberry);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.embed-head strong {
-  color: var(--blueberry);
-  font-size: 14px;
-}
-
-.embed-body {
-  display: grid;
-  gap: 18px;
-}
-
-.instagram-grid {
-  display: grid;
-  gap: 16px;
-}
-
-.instagram-post {
-  width: 100%;
-  min-height: 640px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fff;
-}
-
-.instagram-post iframe {
-  display: block;
-  width: 100%;
-  height: 640px;
-  border: 0;
-}
-
-.embed-body p {
-  margin-bottom: 0;
-  font-size: 13px;
-}
-
 .menu-notes {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -565,6 +495,11 @@ h1 {
   font-weight: 700;
   text-align: center;
   backdrop-filter: blur(8px);
+}
+
+.instagram-link {
+  width: min(100%, 420px);
+  margin: 20px auto 0;
 }
 
 .access {
@@ -662,10 +597,6 @@ footer small {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .instagram-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .signature-menu {
     grid-template-columns: 190px minmax(0, 1fr);
     padding: 30px;
@@ -675,9 +606,6 @@ footer small {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .instagram-actions {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media (max-width: 420px) {
