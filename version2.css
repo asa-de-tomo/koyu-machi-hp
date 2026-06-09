@@ -329,12 +329,12 @@ h1 {
 
 .strawberry-season {
   left: 0;
-  width: 45.833%;
+  width: 41.667%;
   background: var(--strawberry);
 }
 
 .blueberry-season {
-  left: 45.833%;
+  left: 41.667%;
   width: 16.667%;
   background: var(--blueberry);
 }
